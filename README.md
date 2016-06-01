@@ -32,7 +32,9 @@ complete authentication.
          clientID: 'dashboard',
          clientSecret: 'shhh-its-a-secret'
          callbackURL: 'https://www.appname.net/auth/sirena/callback'
-         userProfileURL: 'https://www.appname.net/oauth2/profile'
+         userProfileURL: 'https://www.appname.net/oauth2/profile',
+         scope: 'dashboardManagement' // Single scope
+         // scope: ['dashboardManagement', 'emailAccount'] // Multiple scopes
        },
        function(accessToken, refreshToken, profile, cb) {
          User.findOrCreate(..., function (err, user) {
@@ -43,13 +45,13 @@ complete authentication.
 
 #### Options
 
-	- `authorizationURL`	URL where the app needs to be authorized
-	- `clientID`      		your application's client id
-	- `clientSecret`  		your application's client secret
-	- `callbackURL`   		URL to which the Authorization Server will redirect the user after granting authorization
-	- `tokenURL`			URL where the Authorization Server will return the tokens
-	- `userProfileURL`		URL where the strategy can get the profile info
-
+	* `authorizationURL`:	URL where the app needs to be authorized
+	* `clientID`: your application's client id
+	* `clientSecret`: your application's client secret
+	* `callbackURL`: URL to which the Authorization Server will redirect the user after granting authorization
+	* `tokenURL`: URL where the Authorization Server will return the tokens
+	* `userProfileURL`: URL where the strategy can get the profile info
+  * `scope`: When requesting access using OAuth 2.0, the scope of access is controlled by this parameter. For one scope, just pass a string. Multiple scopes can be specified as an array.
 
 #### Authenticate Requests
 
