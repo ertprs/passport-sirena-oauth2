@@ -59,7 +59,7 @@ authenticate requests.
 For example, as route middleware:
 
     app.get('/auth/sirena',
-      passport.authenticate('google', { scope: ['profile'] }));
+      passport.authenticate('sirena', { scope: ['profile'] }));
 
     app.get('/auth/sirena/callback', 
       passport.authenticate('sirena', { failureRedirect: '/login' }),
