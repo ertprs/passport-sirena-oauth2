@@ -5,7 +5,7 @@
   "main": "./lib",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/LucianoGanga/passport-sirena-oauth2.git"
+    "url": "git+https://github.com/rodati/passport-sirena-oauth2.git"
   },
   "dependencies": {
     "passport-oauth2": "1.x.x"
@@ -13,12 +13,12 @@
   "author": "Sirena",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/LucianoGanga/passport-sirena-oauth2/issues"
+    "url": "https://github.com/rodati/passport-sirena-oauth2/issues"
   },
   "engines": {
     "node": ">= 0.4.0"
   },
-  "homepage": "https://github.com/LucianoGanga/passport-sirena-oauth2#readme",
+  "homepage": "https://github.com/rodati/passport-sirena-oauth2#readme",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   }
