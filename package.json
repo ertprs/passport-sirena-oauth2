@@ -1,0 +1,25 @@
+{
+  "name": "passport-sirena-oauth2",
+  "version": "1.0.0",
+  "description": "Sirena (OAuth 2.0) authentication strategy for Passport",
+  "main": "./lib",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LucianoGanga/passport-sirena-oauth2.git"
+  },
+  "dependencies": {
+    "passport-oauth2": "1.x.x"
+  },
+  "author": "Sirena",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LucianoGanga/passport-sirena-oauth2/issues"
+  },
+  "engines": {
+    "node": ">= 0.4.0"
+  },
+  "homepage": "https://github.com/LucianoGanga/passport-sirena-oauth2#readme",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
