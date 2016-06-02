@@ -1,6 +1,6 @@
 {
   "name": "passport-sirena-oauth2",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "Sirena (OAuth 2.0) authentication strategy for Passport",
   "main": "./lib",
   "repository": {
